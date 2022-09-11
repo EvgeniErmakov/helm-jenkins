@@ -1,5 +1,5 @@
 namespace: ci-cd
-name: jenkins-helm
+name: jenkinsApp
 image: jfrog.it-academy.by/public/jenkins-ci:ermakov
 
 nfs_path: /mnt/IT-Academy/nfs-data/sa2-21-22/ermakov/jenkins
