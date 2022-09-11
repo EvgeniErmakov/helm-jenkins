@@ -1,4 +1,4 @@
-namespace: ci-cd
+namespace: jenkins
 name: jenkinsApp
 image: jfrog.it-academy.by/public/jenkins-ci:ermakov
 
