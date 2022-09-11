@@ -3,7 +3,17 @@ entries:
   jenkins-helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.701110907+03:00"
+    created: "2022-09-11T16:40:48.457239388+03:00"
+    description: A Helm chart for Kubernetes (jenkinsApp)
+    digest: 6ea758b9af6c06b01d77b74126ea4ec58626aeef2756bbdd3e9a343b877a3505
+    name: jenkins-helm
+    type: application
+    urls:
+    - https://evgeniermakov.github.io/helm-jenkins/jenkins-helm-0.9.0.tgz
+    version: 0.9.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-11T16:40:48.457002555+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: dde702b7d5c828485b36a7bc67964a4871148861a6a7a3d78d68c0ffa0dcacc1
     name: jenkins-helm
@@ -14,7 +24,7 @@ entries:
   jenkinsApp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.703593493+03:00"
+    created: "2022-09-11T16:40:48.45941216+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: f8a9f400dcff691ef72249fb22a22829b1daa6ce9edf593df9a618daf459c67a
     name: jenkinsApp
@@ -24,7 +34,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.703363155+03:00"
+    created: "2022-09-11T16:40:48.45919202+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: 55e62e54b075bd7330d49c18021dcb7f7458adb36b9d054aa6e32fb22c4d14cf
     name: jenkinsApp
@@ -34,7 +44,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.703124577+03:00"
+    created: "2022-09-11T16:40:48.458947784+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: 847519a4db11d12807a819248376c9bd9aa72dde51225cbd68c05ea261697e4c
     name: jenkinsApp
@@ -44,7 +54,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.702896824+03:00"
+    created: "2022-09-11T16:40:48.458659198+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: c6507b1f1357a4d9b603741d4d9cddd422d3106b376b5e8843f7b438977232fe
     name: jenkinsApp
@@ -54,7 +64,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.70259441+03:00"
+    created: "2022-09-11T16:40:48.45838074+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: 6b58f955d0906799cfbb9dfc5f0e0b85eb0e8ad7384f9ee203ecdbddd1b02efc
     name: jenkinsApp
@@ -64,7 +74,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.701711265+03:00"
+    created: "2022-09-11T16:40:48.45805856+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: 9585ba505ae3a0fef8589851e8de6fa4ea302f6c1bffcf785f21c281d92a109d
     name: jenkinsApp
@@ -74,7 +84,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-11T16:28:39.701409619+03:00"
+    created: "2022-09-11T16:40:48.457466024+03:00"
     description: A Helm chart for Kubernetes (jenkinsApp)
     digest: 8e42ff67391836ff68f4115a8bf1c34e5f1daeeda52551e074440d5e9c1dcb8e
     name: jenkinsApp
@@ -82,4 +92,4 @@ entries:
     urls:
     - https://evgeniermakov.github.io/helm-jenkins/jenkinsApp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-11T16:28:39.700683478+03:00"
+generated: "2022-09-11T16:40:48.456698395+03:00"

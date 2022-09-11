@@ -18,11 +18,11 @@ main_host_url: http://jenkins-helm.k8s-10.sa/
 
 resources:
   limits:
-    cpu: 3100m
-    memory: 4100Mi
+    cpu: 2000m
+    memory: 3000Mi
   requests:
-    cpu: 3100m
-    memory: 3100Mi
+    cpu: 2000m
+    memory: 2000Mi
 
 master_port: 8080
 master_targetport: 8080
