@@ -39,13 +39,13 @@ spec:
           {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             - name: jenkins-auth-config
-              mountPath: /var/jenkins_home/init.groovy.d/basic-security.groovy
+              mountPath: {{ .Values.basic_security_path }}
               subPath: basic-security.groovy
             - name: jenkins-config-yaml
-              mountPath: /var/jenkins_home/casc_configs/jenkins.yaml
+              mountPath: {{ .Values.jenkins_yaml_path }}
               subPath: jenkins.yaml
             - name: jenkins-config
-              mountPath: /var/jenkins_home
+              mountPath: {{ .Values.jenkins_config_path }}
       volumes:
         - name: jenkins-auth-config
           configMap:
@@ -112,4 +112,3 @@ data:
             url: "{{ .Values.main_host_url }}"
           shell:
             shell: "/bin/bash"
-            

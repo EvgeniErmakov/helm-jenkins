@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "jenkinsApp.name" -}}
+{{- define "jenkins-helm.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "jenkinsApp.fullname" -}}
+{{- define "jenkins-helm.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "jenkinsApp.chart" -}}
+{{- define "jenkins-helm.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "jenkinsApp.labels" -}}
-helm.sh/chart: {{ include "jenkinsApp.chart" . }}
-{{ include "jenkinsApp.selectorLabels" . }}
+{{- define "jenkins-helm.labels" -}}
+helm.sh/chart: {{ include "jenkins-helm.chart" . }}
+{{ include "jenkins-helm.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "jenkinsApp.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "jenkinsApp.name" . }}
+{{- define "jenkins-helm.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "jenkins-helm.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "jenkinsApp.serviceAccountName" -}}
+{{- define "jenkins-helm.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "jenkinsApp.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "jenkins-helm.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}

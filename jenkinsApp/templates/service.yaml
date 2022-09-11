@@ -14,4 +14,3 @@ spec:
       targetPort: {{ .Values.slave_targetport }}
   selector:
     app: {{ .Values.name }} 
-    

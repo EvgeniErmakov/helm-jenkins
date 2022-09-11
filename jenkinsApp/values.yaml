@@ -1,10 +1,12 @@
 namespace: jenkins
-name: jenkinsapp
+name: jenkins-helm
 image: jfrog.it-academy.by/public/jenkins-ci:ermakov
 
 nfs_path: /mnt/IT-Academy/nfs-data/sa2-21-22/ermakov/jenkins
 nfs_server: 192.168.37.105
-
+basic_security_path: /var/jenkins_home/init.groovy.d/basic-security.groovy
+jenkins_yaml_path: /var/jenkins_home/casc_configs/jenkins.yaml
+jenkins_config_path: /var/jenkins_home
 admin_address: evgeniermakov1994@gmail.com
 
 ingress:

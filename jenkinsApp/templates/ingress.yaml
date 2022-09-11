@@ -19,4 +19,3 @@ spec:
                 name: {{ .Values.name }}
                 port:
                   number: {{ .Values.ingress_port }}
-
