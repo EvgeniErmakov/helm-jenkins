@@ -6,10 +6,10 @@ metadata:
   namespace: {{ .Values.namespace }}
   annotations:
     kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/server-alias: {{ .Values.server_alias }}
+    nginx.ingress.kubernetes.io/server-alias: {{ .Values.ing_alias }}
 spec:
   rules:
-    - host: {{ .Values.web_host }}
+    - host: {{ .Values.ing_host }}
       http:
         paths:
           - path: /
@@ -18,4 +18,4 @@ spec:
               service:
                 name: {{ .Values.name }}
                 port:
-                  number: {{ .Values.ingress_port }}
+                  number: {{ .Values.ing_port }}

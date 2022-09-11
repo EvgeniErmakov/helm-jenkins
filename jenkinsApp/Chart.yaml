@@ -2,5 +2,5 @@ apiVersion: v2
 name: jenkins-helm
 description: A Helm chart for Kubernetes (jenkinsApp)
 type: application
-version: 0.9.0
+version: 1.0.0
 appVersion: "1.16.0"

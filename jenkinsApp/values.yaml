@@ -1,31 +1,24 @@
 namespace: jenkins
-name: jenkins-helm
+name: helm-jenkins
 image: jfrog.it-academy.by/public/jenkins-ci:ermakov
 
 nfs_path: /mnt/IT-Academy/nfs-data/sa2-21-22/ermakov/jenkins
 nfs_server: 192.168.37.105
-basic_security_path: /var/jenkins_home/init.groovy.d/basic-security.groovy
-jenkins_yaml_path: /var/jenkins_home/casc_configs/jenkins.yaml
-jenkins_config_path: /var/jenkins_home
-admin_address: evgeniermakov1994@gmail.com
 
 ingress:
   enabled: enabled
-server_alias: "jenkins-helm.k8s-10.sa"
-web_host: jenkins-helm.k8s-9.sa
-ingress_port: 8080
-main_host_url: http://jenkins-helm.k8s-10.sa/
+ing_alias: "jenkins-helm.k8s-10.sa"
+ing_host: jenkins-helm.k8s-9.sa
+ing_port: 8080
 
 resources:
-  limits:
-    cpu: 2000m
-    memory: 3000Mi
-  requests:
-    cpu: 2000m
-    memory: 2000Mi
+requests_cpu: 3000m
+requests_memory: 3000Mi
+limits_cpu: 3000m
+limits_memory: 4000Mi
 
 master_port: 8080
 master_targetport: 8080
 slave_port: 50000
-slave_targetport: 50000 
+slave_targetport: 50000
 
